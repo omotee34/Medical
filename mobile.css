@@ -98,6 +98,12 @@
     #showcase .showcase-content p {
       margin-bottom: 10px;
       text-align: center; }
+     #main-footer .icons-sec ul{
+      	flex-direction: column;
+      }
+        #main-footer .icons-sec ul li{
+        	margin-bottom: 20px;
+        }
 }
 @media (max-width: 400px){
 	#few .few-content {
