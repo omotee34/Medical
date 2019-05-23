@@ -1,0 +1,121 @@
+#navbar .nav-items{
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+}
+.logo{
+	justify-self:center;
+}
+#navbar .nav-items ul li a{
+	padding: 0.7rem 0.4rem;
+	margin-bottom: 1rem;
+}
+#service .service-content,
+#visit .visit-content,
+#dream .dream-content,
+#doctors .doc-content,
+#patients .patient-container,
+#few .few-content,
+#contact .contact-items,
+#main-footer .footer-content{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+}
+#visit .visit-content div{
+	border-right: none;
+	border-bottom: 1px solid #fff;
+	height: 100%;
+}
+#visit .visit-content div:last-child{
+	border-bottom: none;
+}
+#dream .dream-content .head{
+	grid-row: 1;
+}
+#main-footer :last-child {
+  grid-column: 1;
+  text-align: center; }
+
+.m-heading {
+  color: #fff;
+  padding-bottom: 1rem; 
+}
+#dream .dream-content :last-child {
+    grid-column: 1; }
+  #dream .dream-content :nth-child(2) {
+    grid-column:1; }
+  
+ .text-color{
+	color:  rgb(12, 184, 182);
+	text-decoration: none;
+	font-size: 1.2rem;
+
+}
+
+@media (max-width: 800px) {
+	#navbar .nav-items ul{
+		justify-self:center;
+	}
+
+}
+@media (max-width: 500px) {
+	#navbar .nav-items ul li a{
+		padding: 0.2rem;
+
+	}
+	#navbar .nav-items ul{
+		margin: 0 2rem;
+		
+	}
+	#navbar .nav-items .small{
+		display: inline-block;
+		
+		justify-self:center;
+		display: flex;
+}
+#navbar .nav-items .small li a{
+	padding: 0.4rem;
+}
+	#navbar .nav-items .large{
+		display: none;
+	}
+
+	#navbar .nav-items .small{
+		margin: 0 1rem;
+	}
+	#showcase{
+		height: 70vh;
+	}
+	#showcase .showcase-content h1 {
+      font-size: 20px;
+      padding-bottom: 1rem; }
+      #showcase .showcase-content{
+      	padding-top: 160px;
+      }
+    #showcase .showcase-content p {
+      margin-bottom: 10px;
+      text-align: center; }
+}
+@media (max-width: 400px){
+	#few .few-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem; 
+}
+#few :first-child h2 {
+  margin-top: 10px; }
+#few :last-child p {
+  font-size: 1rem;
+  color: #ddd; }
+#few :last-child .sp {
+  color: #0cb8b6;
+  margin-left: 0px; }
+  #doctors .doc-content{
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+}
+
+}
